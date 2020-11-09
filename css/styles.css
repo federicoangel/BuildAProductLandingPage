@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+#page-wrapper {
+    position: relative;
+}
+
+body{
+    max-width: 100%;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(176, 196, 222);
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(69, 77, 87);
+    color: lavenderblush;
+    width: 100%;
+}
+
+#header-img{
+    max-width: fluid;
+    max-width: 50%;
+    margin-right: 0px;
+}
+
+.logo{
+    
+    display: flex;
+    text-align: center;
+    align-items: initial;
+
+}
+
+.logo h6{
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.positionTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    margin-left: -60px;
+}
+
+.positionMenu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+  
+a {
+    color: lavenderblush;
+    text-decoration: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid whitesmoke; 
+    border-radius: 15px;
+    max-width: 82%;
+    margin: auto;
+    margin-bottom: 50px;
+    height: auto;
+    box-shadow: 0px 5px 15px 0px lightgray;
+    padding: 10px;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.productos ul{
+    list-style: element();
+}
+
+.video-responsive {
+    display: flex;
+    position: relative;
+    padding-bottom: 60%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+    
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+
+.btnEnviar{
+    line-height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(113, 86%, 35%);
+    color: hsl(193, 100%, 96%);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.inputText{
+    max-width: 100%;
+    line-height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 5%);
+    font-size: 16px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 40%;
+    text-align: center;
+    align-items: center;
+}
+
+h6{
+    margin-bottom: 5px;;
+}
+
+@media (max-width: 800px) {
+
+
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo h1{
+        font-size: 5px;
+    }
+
+    #form{
+        max-width: 80%;
+
+    }
+
+    .positionTitle{
+        margin-left: 0px;
+    }
+
+    .btnEnviar{
+        max-width: 90%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    #header-img{
+        max-width: 40%;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+}
